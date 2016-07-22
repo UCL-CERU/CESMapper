@@ -1,0 +1,16 @@
+[general]
+name=CESMapper
+description=CESMapper implements the Coastal and Estuarine System Mapping (CESM) method as a plugin for the open-source QGIS
+version=1.5.2
+qgisMinimumVersion=2.8
+qgisMaximumVersion=2.14.3
+about=This software was developed by UCL Coastal and Estuarine Research Unit as part of the NERC-funded Integrating COAstal Sediment sySTems (iCOASST) project (NE/J005541/1). CESM is described more fully in: French JR, Burningham H, Thornhill G, Whitehouse R & Nicholls R.J (2016) Conceptualizing and mapping coupled estuary, coast and inner shelf sediment systems. Geomorphology 256, 17-35.
+author= Gillian Thornhill (UCL), Helene Burningham (UCL), Jon French (UCL)
+email= h.burningham@ucl.ac.uk,j.french@ucl.ac.uk 
+category=Vector
+repository=https://github.com/UCL-CERU/CESMapper
+homepage=http://www.channelcoast.org/iCOASST/CESM/
+icon=CESMicon.png
+changelog=1.5.2
+	- minor changes to menus
+	- new icon
