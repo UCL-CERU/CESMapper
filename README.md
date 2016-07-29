@@ -6,6 +6,7 @@ The CESMapper plugin for QGIS has been developed as part of the Integrating COAs
 Further information on Coastal and Estuarine System Mapping (CESM) and iCOASST can be found at:
 
 http://www.icoasst.net 
+
 http://www.channelcoast.org/iCOASST 
 
 The CESM approach is described more fully in: 
