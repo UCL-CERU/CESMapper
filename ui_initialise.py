@@ -2,7 +2,8 @@
 
 # Form implementation generated from reading ui file 'ui_initialise.ui'
 #
-# Created by: PyQt4 UI code generator 4.11.4
+# Created: Tue Aug  2 23:14:17 2016
+#      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -26,30 +27,36 @@ class Ui_initialise(object):
     def setupUi(self, initialise):
         initialise.setObjectName(_fromUtf8("initialise"))
         initialise.setEnabled(True)
-        initialise.resize(400, 200)
+        initialise.resize(526, 277)
         initialise.setWindowOpacity(0.9)
         self.Mainlabel = QtGui.QLabel(initialise)
-        self.Mainlabel.setGeometry(QtCore.QRect(70, 70, 170, 50))
+        self.Mainlabel.setGeometry(QtCore.QRect(140, 70, 241, 51))
         font = QtGui.QFont()
         font.setPointSize(28)
         font.setBold(True)
         font.setWeight(75)
         self.Mainlabel.setFont(font)
+        self.Mainlabel.setAlignment(QtCore.Qt.AlignCenter)
         self.Mainlabel.setObjectName(_fromUtf8("Mainlabel"))
         self.loadButton = QtGui.QPushButton(initialise)
         self.loadButton.setEnabled(True)
-        self.loadButton.setGeometry(QtCore.QRect(50, 140, 300, 35))
+        self.loadButton.setGeometry(QtCore.QRect(100, 210, 300, 35))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.loadButton.setFont(font)
         self.loadButton.setObjectName(_fromUtf8("loadButton"))
         self.Mainlabel_2 = QtGui.QLabel(initialise)
-        self.Mainlabel_2.setGeometry(QtCore.QRect(24, 25, 352, 24))
+        self.Mainlabel_2.setGeometry(QtCore.QRect(20, 20, 501, 31))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Mainlabel_2.setFont(font)
+        self.Mainlabel_2.setAlignment(QtCore.Qt.AlignCenter)
         self.Mainlabel_2.setObjectName(_fromUtf8("Mainlabel_2"))
         self.label = QtGui.QLabel(initialise)
-        self.label.setGeometry(QtCore.QRect(280, 70, 50, 50))
+        self.label.setGeometry(QtCore.QRect(220, 130, 50, 50))
         self.label.setText(_fromUtf8(""))
         self.label.setPixmap(QtGui.QPixmap(_fromUtf8("img/CESM50.png")))
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName(_fromUtf8("label"))
 
         self.retranslateUi(initialise)
@@ -58,6 +65,7 @@ class Ui_initialise(object):
     def retranslateUi(self, initialise):
         initialise.setWindowTitle(_translate("initialise", "CESMapper", None))
         self.Mainlabel.setText(_translate("initialise", "CESMapper", None))
-        self.loadButton.setText(_translate("initialise", "Load CESM ontology library file", None))
+        self.loadButton.setText(_translate("initialise", "Load CESM ontology", None))
         self.Mainlabel_2.setText(_translate("initialise", "Coastal and Estuarine System Mapping", None))
 
+import images_rc

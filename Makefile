@@ -1,11 +1,14 @@
 #/***************************************************************************
-# TestGDT
+# CESMapper
+#
+# QGIS plugin for Coastal and Estuarine System Mapping
 # 
-# Test for GDT Desc
+# 
 #                             -------------------
 #        begin                : 2012-07-05
-#        copyright            : (C) 2012 by gdt
-#        email                : g.thornhill@ucl.ac.uk
+#        copyright            : (C) 2012,2015, 2016 Gillian Thornhill, 
+#                               Jon French, Helene Brningham and UCL
+#        email                : j.french@ucl.ac.uk or h.burningham@ucl.ac.uk
 # ***************************************************************************/
 # 
 #/***************************************************************************
@@ -39,17 +42,19 @@ default: compile
 compile: $(UI_FILES) $(RESOURCE_FILES)
 
 %_rc.py : %.qrc
-	/usr/local/Cellar/pyqt/4.11.4/bin/pyrcc4 -o $*_rc.py  $<
-
+# Edit here to suit your own pyrcc4 and pyuic4 paths
+#	/usr/local/Cellar/pyqt/4.11.4/bin/pyrcc4 -o $*_rc.py  $<
+	/opt/anaconda/bin/pyrcc4 -o $*_rc.py  $<
 %.py : %.ui
-	/usr/local/Cellar/pyqt/4.11.4/bin/pyuic4 -o $@ $<
+#	/usr/local/Cellar/pyqt/4.11.4/bin/pyuic4 -o $@ $<
+	/opt/anaconda/bin/pyuic4 -o $@ $<
 
 %.qm : %.ts
 	lrelease $<
 
 # The deploy  target only works on unix like operating system where
 # the Python plugin directory is located at:
-# $HOME/.qgis/python/plugins
+# $HOME/.qgis2/python/plugins
 deploy: compile doc transcompile
 	mkdir -p $(HOME)/.qgis2/python/plugins/$(PLUGINNAME)
 	cp -vf $(PY_FILES) $(HOME)/.qgis2/python/plugins/$(PLUGINNAME)
@@ -60,7 +65,7 @@ deploy: compile doc transcompile
 	cp -vfr $(HELP) $(HOME)/.qgis2/python/plugins/$(PLUGINNAME)/help
 
 # The dclean target removes compiled python files from plugin directory
-# also delets any .svn entry
+# also deletes any .svn entry
 dclean:
 	find $(HOME)/.qgis2/python/plugins/$(PLUGINNAME) -iname "*.pyc" -delete
 	find $(HOME)/.qgis2/python/plugins/$(PLUGINNAME) -iname ".svn" -prune -exec rm -Rf {} \;

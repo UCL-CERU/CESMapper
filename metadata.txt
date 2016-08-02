@@ -11,6 +11,6 @@ category=Vector
 repository=https://github.com/UCL-CERU/CESMapper
 homepage=http://www.channelcoast.org/iCOASST/CESM/
 icon=CESMicon.png
-changelog=1.5.2
-	- minor changes to menus
-	- new icon
+changelog=
+ 1.5.2 - first stable release
+

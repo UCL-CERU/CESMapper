@@ -2,7 +2,8 @@
 
 # Form implementation generated from reading ui file 'ui_featSelect.ui'
 #
-# Created by: PyQt4 UI code generator 4.11.4
+# Created: Tue Aug  2 23:14:17 2016
+#      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -46,8 +47,9 @@ class Ui_featSelect(object):
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(30, 80, 251, 461))
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.verticalLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
-        self.verticalLayout.setSizeConstraint(QtGui.QLayout.SetNoConstraint)
         self.verticalLayout.setSpacing(3)
+        self.verticalLayout.setSizeConstraint(QtGui.QLayout.SetNoConstraint)
+        self.verticalLayout.setMargin(0)
         self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         self.stopButton = QtGui.QPushButton(featSelect)
         self.stopButton.setGeometry(QtCore.QRect(75, 580, 200, 35))

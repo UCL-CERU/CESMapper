@@ -2,7 +2,8 @@
 
 # Form implementation generated from reading ui file 'ui_displayOptions.ui'
 #
-# Created by: PyQt4 UI code generator 4.11.4
+# Created: Tue Aug  2 23:14:17 2016
+#      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -49,6 +50,7 @@ class Ui_displayOptions(object):
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(20, 90, 281, 141))
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.verticalLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setMargin(0)
         self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
 
         self.retranslateUi(displayOptions)
