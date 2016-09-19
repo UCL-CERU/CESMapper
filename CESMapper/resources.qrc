@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/plugins/CESMapper" >
+    <file>CESMicon.png</file>
+    <file>img/CESM50.png</file>
+    <file>img/CESM100.png</file>
+    <file>img/CESM500.png</file>
+  </qresource>
+</RCC>

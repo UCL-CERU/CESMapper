@@ -1,0 +1,190 @@
+<library>
+<CESOMLversion>1.7</CESOMLversion>
+<metadata> Author = "GDT, JF, HB" Date="26/07/2016"</metadata>
+<libraryname>iCOASST</libraryname>
+<libraryversion>1.7</libraryversion>
+<numorders>5</numorders>
+
+<order0>
+ <ordername>
+Coastal shelf
+</ordername>
+
+ <property>numcomps=0, numsuborders=0, shape=0, colour==#FFFFFF</property>
+</order0>
+
+<order1>
+ <ordername>
+Coastal region
+</ordername>
+ <property>numcomps=0, numsuborders=0, shape=0, colour=#FFFFFF </property>
+</order1>
+
+<order2>
+  <ordername>Landform Complex</ordername>
+  <property>numcomps=15, numsuborders=3, shape=0, colour=#F08080</property>
+
+ <suborder>
+<subproperty>subordername="Estuary", numcomps=7, shape=0, colour=#F08080</subproperty>
+
+    <component>name="Fjord", colour=#F08080, children="Beach,Cliff,Shore platform,Tidal flat,Saltmarsh,Spit,
+    Inlet channel,Channel,Rock outcrop,River,Estuary head delta,High ground,Low ground,Reclaimed,
+    Sea wall,Embankment,Revetment,Bulkhead,Breakwater,Timber groyne,Rock groyne,Jetty,Outlet,Dock,
+    Weir,Barrage,Sediment recharge,Sediment recycling,Sediment bypassing,Dredging"</component>
+
+    <component>name="Fjard", colour=#F08080, children="Beach,Cliff,Dune,Shore platform,Tidal flat,Saltmarsh,Spit,
+    Inlet channel,Channel,Rock outcrop,River,Estuary head delta,High ground,Low ground,Reclaimed,
+    Sea wall,Embankment,Revetment,Bulkhead,Breakwater,Timber groyne,Rock groyne,Jetty,Outlet, 
+    Training wall,Dock,Weir,Barrage,Sediment recharge,Sediment recycling,Sediment bypassing,
+    Dredging"</component>
+ 
+    <component>name="Embayment", colour=#F08080, children="Beach,Cliff,Dune,Shore platform,Tidal flat,Saltmarsh,
+    Spit,Bank,Channel,Rock outcrop,River,High ground,Low ground,Reclaimed,
+    Sea wall,Embankment,Revetment,Bulkhead,Breakwater,Timber groyne,Rock groyne,Jetty,Outlet, 
+    Training wall,Dock,Barrage,Sediment recharge,Sediment recycling,Sediment bypassing,
+    Dredging,Dredge disposal"</component>
+    
+    <component>name="Spit-enclosed", colour=#F08080, children="Beach,Cliff,Dune,Shore platform,Tidal flat,Saltmarsh,
+    Spit,Inlet channel,Ebb delta,Flood delta,Channel,Rock outcrop,River,High ground,Low ground,
+    Reclaimed,Sea wall,Embankment,Revetment,Bulkhead,Breakwater,Timber groyne,Rock groyne,Jetty,
+    Outlet,Training wall,Dock,Weir,Barrage,Sediment recharge,Sediment recycling,
+    Dredging"</component>
+    
+    <component>name="Inlet", colour=#F08080, children="Beach,Cliff,Dune,Shore platform,Tidal flat,Saltmarsh,Spit,
+    Inlet channel,Ebb delta,Flood delta,Channel,Rock outcrop,High ground,Low ground,Reclaimed,
+    Sea wall,Embankment,Revetment,Bulkhead,Breakwater,Timber groyne,Rock groyne,Jetty,Outlet, 
+    Training wall,Dock,Barrage,Sediment recharge,Sediment recycling,Dredging"</component>
+    
+    <component>name="Funnel", colour=#F08080, children="Beach,Cliff,Dune,Shore platform,Tidal flat,Saltmarsh,Spit,
+    Inlet channel,Bank,Channel,Rock outcrop,River,Estuary head delta,High ground,Low ground,
+    Reclaimed,Sea wall,Embankment,Revetment,Bulkhead,Breakwater,Timber groyne,Rock groyne,Jetty, 
+    Outlet,Training wall,Dock,Weir,Barrage,Sediment recharge,Sediment recycling,
+    Dredging"</component>
+    
+    <component>name="Ria", colour=#F08080, children="Beach,Cliff,Dune,Shore platform,Tidal flat,Saltmarsh,Spit,
+    Inlet channel,Channel,Rock outcrop,River,Estuary head delta,High ground,Low ground,Reclaimed,
+    Sea wall,Embankment,Revetment,Bulkhead,Breakwater,Timber groyne,Rock groyne,Jetty,Outlet, 
+    Training wall,Dock,Weir,Barrage,Sediment recharge,Sediment recycling,Dredging"</component>
+  </suborder>
+  
+  <suborder>
+<subproperty>subordername = "Open Coast", numcomps=5, shape=0, colour=#F08080</subproperty>
+
+   
+    <component>name="Cuspate foreland", colour=#D00000, children="Beach,Beach ridge,Dune,High ground,Low ground,
+    Reclaimed,Sea wall,Embankment,Revetment,Timber groyne,Rock groyne,Sediment recharge"</component>
+
+    <component>name="Coastal barrier", colour=#D00000, children="Beach,Beach ridge,Dune,Tidal flat,Saltmarsh,Spit,
+    Inlet channel,Ebb delta,Flood delta,Channel,Brackish marsh,Lagoon,Rock outcrop,High ground,Low ground,Reclaimed,
+    Sea wall,Embankment,Revetment,Timber groyne,Rock groyne,Sediment recharge"</component>
+    
+    <component>name="Mainland coast", colour=#D00000, children="Beach,Beach ridge,Cliff,Dune,Shore platform,
+    Tidal flat,Saltmarsh,Tombolo,Spit,Inlet channel,Lagoon,Brackish marsh,Ebb delta,Rock outcrop,
+    High ground,Low ground,Reclaimed,Sea wall,Embankment,Revetment,Bulkhead,Breakwater,
+    Detached breakwater,Timber groyne,Rock groyne,Jetty,Outlet,Dock,Sediment recharge,
+    Sediment recycling,Sediment bypassing,Dredging"</component>
+    
+    <component>name="Headland", colour=#D00000, children="Cliff,Shore platform,Spit,Rock outcrop,High ground,
+    Low ground,Reclaimed,Sea wall,Embankment,Revetment,Bulkhead,Breakwater"</component>
+    
+    <component>name="Bay", colour=#D00000, children="Beach,Beach ridge,Cliff,Dune,Shore platform,Tidal flat,
+    Saltmarsh,Tombolo,Spit,Inlet channel,Lagoon,Brackish marsh,Ebb delta,Rock outcrop,High ground,Low ground,
+    Reclaimed,Sea wall,Embankment,Revetment,Breakwater,Timber groyne,Rock groyne,Jetty,Outlet, 
+    Training wall,Dock,Barrage,Sediment recharge,Sediment recycling,Dredging"</component>
+  </suborder>
+  
+  <suborder> 
+<subproperty>subordername="Shoreface and inner shelf", numcomps=3, shape=0, colour=#FFCC99</subproperty>
+   
+   <component>name="Shelf bank system",  children="Bank,Dredging,Dredge disposal"</component>
+   
+   <component>name="Nearshore bank system", children="Bank,Dredging,Dredge disposal"</component>
+   
+   <component>name="Linear bank system",  children="Bank,Dredging,Dredge disposal"</component>
+  </suborder>
+
+</order2>
+
+<order3>
+ <ordername>Landform</ordername>
+ <property> numcomps=25, numsuborders=3, shape=1, colour=#00FA9A </property>
+ 
+ <suborder> 
+<subproperty>subordername="Dynamic landforms", numcomps=18, shape=1, colour=#00FA9A</subproperty>
+  
+   <component> name="Bank, colour=#33CC66, children="all"</component>
+   <component> name="Beach", colour=#FFE74A, children="all"</component>
+   <component> name="Beach ridge", colour=#F0974A, children="all"</component>
+   <component> name="Brackish marsh", colour=#A2DBA7, children="all"</component>
+   <component> name="Channel", colour=#99FFCC, children="all"</component>
+   <component> name="Cliff", colour=#576572, children="all"</component>
+   <component> name="Dune", colour=#99CC00, children="all"</component>
+   <component> name="Ebb delta", colour=#CCFF99, children="all"</component>
+   <component> name="Estuary head delta", colour=#339933, children="all"</component>
+   <component> name="Flood delta", colour=#666633, children="all"</component>
+   <component> name="Inlet channel", colour=#999900, children="all"</component>
+   <component> name="Lagoon", colour=#CCCC00, children="all"</component>
+   <component> name="River", colour=#1BB1DD, children="all"</component>
+   <component> name="Rock outcrop", colour=#99FF00, children="all"</component>
+   <component> name="Saltmarsh", colour=#33CC66, children="all"</component>
+   <component> name="Shore platform", colour=#009900, children="all"</component>
+   <component> name="Spit", colour=#99CC99, children="all"</component>
+   <component> name="Tidal flat", colour=#92D1C6, children="all"</component>
+   <component> name="Tombolo", colour=#00CC99, children="all"</component>
+  </suborder>
+  
+ <suborder> 
+<subproperty>subordername="Hinterland", numcomps=3, shape=1, colour=#00FA9A</subproperty>
+   
+   <component> name="High ground", colour=#9E946D, children="none"</component>
+   <component> name="Low ground", colour=#BDB493, children="none"</component>
+   <component> name="Reclaimed", colour=#D1CAB0, children="none"</component>
+  </suborder>
+  
+  <suborder>
+<subproperty>subordername="Sediment store", numcomps=4, shape=1, colour=#00FA9A</subproperty>
+   
+   <component> name="Seabed gravel", colour=#858585, children="Dredging,Dredge disposal"</component>
+   <component> name="Seabed sand", colour=#A8A8A8, children="Dredging,Dredge disposal"</component>
+   <component> name="Seabed mud", colour=#CCCCCC, children="Dredging,Dredge disposal"</component>
+   <component> name="Suspended mud", colour=#EBEBEB, children="Dredging,Dredge disposal"</component>
+  </suborder>
+
+</order3>
+
+<order4>
+ <ordername>Intervention</ordername>
+ <property> numcomps=19, numsuborders=2, shape=0, colour=#CC66FF</property>
+ 
+ <suborder>
+<subproperty>subordername="Structural", numcomps=14, shape=0, colour=#998CA8</subproperty>
+  
+   <component> name="Sea wall", colour=#998CA8, children="none"</component>
+   <component> name="Embankment", colour=#998CA8, children="none"</component>
+   <component> name="Revetment", colour=#998CA8, children="none"</component>
+   <component> name="Bulkhead", colour=#998CA8, children="none"</component>
+   <component> name="Breakwater", colour=#998CA8, children="none"</component>
+   <component> name="Detached breakwater", colour=#998CA8, children="none"</component>
+   <component> name="Timber groyne", colour=#998CA8, children="none"</component>
+   <component> name="Rock groyne", colour=#998CA8, children="none"</component>
+   <component> name="Jetty", colour=#998CA8, children="none"</component>
+   <component> name="Outlet", colour=#998CA8, children="none"</component>
+   <component> name="Training wall", colour=#998CA8, children="none"</component>
+   <component> name="Dock", colour=#998CA8, children="none"</component>
+   <component> name="Weir", colour=#998CA8, children="none"</component>
+   <component> name="Barrage", colour=#998CA8, children="none"</component>
+  </suborder>
+  
+  <suborder>
+<subproperty>subordername="Non-structural", numcomps=5, shape=0, colour=#AAAAFF</subproperty>
+
+   <component> name="Sediment recharge", colour=#AAAAFF, children="none"</component>
+   <component> name="Sediment bypassing", colour=#AAAAFF, children="none"</component>
+   <component> name="Sediment recycling", colour=#AAAAFF, children="none"</component>
+   <component> name="Dredging", colour=#AAAAFF, children="none"</component>
+   <component> name="Dredge disposal", colour=#AAAAFF, children="none"</component>
+  </suborder>
+  
+</order4>
+
+</library>
